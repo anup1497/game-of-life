@@ -7,9 +7,9 @@ pipeline {
         
         stage ("mvn install") {
             steps {
-                dir("/mnt/project/game-of-life/") {
-                sh "mvn clean install"
-                }
+                
+                
+               sh "mvn -Dmaven.repo.local=/mnt/project/ clean package install"
             }
             
         }
