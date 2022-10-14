@@ -4,14 +4,7 @@ pipeline {
     
     stages {
         
-        stage ("Git checkout") {
-           steps {
-                dir("/mnt/project/") {
-                sh "git clone https://github.com/anup1497/game-of-life.git"
-                }
-            }
-            
-        }
+        
         stage ("mvn install") {
             steps {
                 dir("/mnt/project/game-of-life/") {
