@@ -9,7 +9,7 @@ pipeline {
             steps {
                 
                 
-               sh "mvn -Dmaven.repo.local=/mnt/project/ clean package install"
+               sh "mvn clean install"
             }
             
         }
