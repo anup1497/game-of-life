@@ -27,7 +27,7 @@ pipeline {
         stage ("Docker Image") {
             steps {
                 
-                dir("/mnt/key.pem /root/.jenkins/workspace/Muli_GOL_master/gameoflife-web/") {
+                dir("/root/.jenkins/workspace/Muli_GOL_master/gameoflife-web/") {
                 sh "docker build -t rohit ."
                 }
                 
